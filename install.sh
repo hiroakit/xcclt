@@ -1,7 +1,5 @@
 #!/bin/zsh
 
-set -e
-
 echo "Find Xcode Command Line Tools..."
 XCLT_PATH=`xcode-select -p`
 if [ $? -eq 0 ]; then
@@ -9,9 +7,12 @@ if [ $? -eq 0 ]; then
   exit 0
 fi
 
-echo "Install Xcode Command Line Tools by 'xcode-select install'"
-xcode-select install
-osascript << APPLESCRIPT |
+echo "Install Xcode Command Line Tools by 'xcode-select --install'"
+xcode-select --install
+osascript > /dev/null << APPLESCRIPT
+-- Waiting appear "Install Command Line Developer Tools" dialog
+delay 5
+
 tell application "Install Command Line Developer Tools"
 	activate
 	
