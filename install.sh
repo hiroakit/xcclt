@@ -11,7 +11,6 @@ echo "Install Xcode Command Line Tools by softwareupdate"
 SU_XCLT_FLUG_PATH=/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 if [ ! -f ${SU_XCLT_FLUG_PATH} ]; then
     touch ${SU_XCLT_FLUG_PATH}
-    exit
 fi
 
 XCLT_NAME=`softwareupdate -l | grep "Label: Command Line Tools" | awk -F': ' '{print $2}'`
