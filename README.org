@@ -1,0 +1,20 @@
+* Usage
+
+Allow Terminal in ~Privacy & Security~ > ~Accessibility~.
+
+[[file:docs/images/figure_security_01.png]]
+
+Then, Execute below command.
+
+#+begin_src shell :eval no
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/hiroakit/xclt/HEAD/install.sh)"
+#+end_src
+
+* Motivation
+
+We shouldn’t click the GUI dialog when installing Xcode command line tools via command line.
+
+[[file:docs/images/figure_motivation_01.png]]
+
+[[file:docs/images/figure_motivation_02.png]]
+
