@@ -1,6 +1,6 @@
 * Usage
 
-Execute below command.
+Execute below command that will install ~Command Line Tools for Xcode~ with ~softwareupdate~ command.
 
 #+begin_src shell :eval no
 /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/hiroakit/xclt/HEAD/install.sh)"
