@@ -26,7 +26,7 @@ tell application "Install Command Line Developer Tools"
 		
 		-- On "License Agreement" modal window
 		-- 1:Agree button, 2:UnAgree button
-		click button 2
+		click button 1
 	end tell
 end tell
 APPLESCRIPT
